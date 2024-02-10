@@ -1,38 +1,153 @@
+@font-face {
+    font-family: 'Exo';
+    src: url('../public/css/fonts/Exo/Exo-VariableFont_wght.ttf') format('truetype');
+}:root {
+    --backgroung-color: #FAF2EA;
+    --primary-color: #226D68;
+}
+body{
+    font-family: Exo, sans-serif !important;
+}
+
 .App {
-  text-align: center;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+    background-color: var(--backgroung-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5rem;
+    height: 80vh;
+    width: 50vw;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2rem;
+}
+.container1{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.bodies-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+select {
+    appearance: none;
+    border: .1rem solid var(--primary-color);
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    background-color: #fff;
+    background-image: none;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+select:focus {
+    outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Custom Select wrapper */
+.select {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 2rem;
+    border-radius: .25em;
+    overflow: hidden;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    color: var(--backgroung-color);
+    font-size: 12px;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+    background-color: var(--primary-color);
+    transition: .25s all ease;
+    pointer-events: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Transition */
+.select:hover::after {
+    color: var(--backgroung-color);
+}
+
+.cursor-line {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 200px;
+    height: .06rem;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #ddd;
+    outline: none;
+    cursor: pointer;
+
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        background-color: #ccc;
+    }
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: .4rem;
+        height: .4rem;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        border: none;
+        position: relative;
+        top: -2.1px;
+    }
+}
+.body-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    border: 1px solid var(--primary-color);
+}
+
+ /*Responsive*/
+
+@media (max-width: 768px) {
+    .app-container {
+        width: 80vw;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .bodies-div{
+        flex-direction: column;
+    }
+    .body-info{
+        width: 80%;
+    }
 }

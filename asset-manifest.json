@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/myReactChallenge/static/css/main.6e270ebe.css",
-    "main.js": "/myReactChallenge/static/js/main.97e658de.js",
+    "main.css": "/myReactChallenge/static/css/main.fcb19ac0.css",
+    "main.js": "/myReactChallenge/static/js/main.33c65a43.js",
     "static/js/592.08741faa.chunk.js": "/myReactChallenge/static/js/592.08741faa.chunk.js",
     "static/media/Exo-VariableFont_wght.ttf": "/myReactChallenge/static/media/Exo-VariableFont_wght.6c037f7506ee86084662.ttf",
     "index.html": "/myReactChallenge/index.html",
-    "main.6e270ebe.css.map": "/myReactChallenge/static/css/main.6e270ebe.css.map",
-    "main.97e658de.js.map": "/myReactChallenge/static/js/main.97e658de.js.map",
+    "main.fcb19ac0.css.map": "/myReactChallenge/static/css/main.fcb19ac0.css.map",
+    "main.33c65a43.js.map": "/myReactChallenge/static/js/main.33c65a43.js.map",
     "592.08741faa.chunk.js.map": "/myReactChallenge/static/js/592.08741faa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e270ebe.css",
-    "static/js/main.97e658de.js"
+    "static/css/main.fcb19ac0.css",
+    "static/js/main.33c65a43.js"
   ]
 }

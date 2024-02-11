@@ -151,3 +151,30 @@ select::-ms-expand {
         width: 80%;
     }
 }
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.checkbox-icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.checkbox-label {
+    font-size: 1.2rem;
+}
+.checked-status {
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.checked {
+    color: green;
+}
+
+.unchecked {
+    color: red;
+}

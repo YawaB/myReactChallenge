@@ -26,7 +26,7 @@ const BodiesSelector = ({ isPlanet, gravity, onSelect }) => {
     }
     const filteredBodies = bodies.filter((body) => {
         const isPlanetCondition = isPlanet ? body.isPlanet : true;
-        const gravityCondition = body.gravity >= gravity;
+        const gravityCondition = body.gravity <= gravity;
 
         return isPlanetCondition && gravityCondition;
     });

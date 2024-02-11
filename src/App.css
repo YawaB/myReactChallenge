@@ -59,7 +59,6 @@ select:focus {
     outline: none;
 }
 
-/* Remove IE arrow */
 select::-ms-expand {
     display: none;
 }
@@ -141,16 +140,27 @@ select::-ms-expand {
     .app-container {
         width: 80vw;
     }
-    .container1{
+
+    .container1 {
         flex-direction: column;
     }
-    .bodies-div{
+
+    .bodies-div {
         flex-direction: column;
     }
-    .body-info{
+
+    .body-info {
         width: 80%;
+        font-size: .8rem;
     }
-}
+
+    .select {
+        width: 100%;
+    }
+    .checkbox-container{
+        margin-bottom: 2rem;
+    }
+    }
 .checkbox-container {
     display: flex;
     align-items: center;

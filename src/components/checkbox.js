@@ -9,8 +9,6 @@ export default function Checkbox({onCheckboxChange}) {
     const icon = checked ? faCheckSquare : faSquare;
 
     const handleCheck = (event) => {
-
-        console.log('Checkbox clicked');
         const isChecked = !checked;
         setChecked(isChecked);
         if (onCheckboxChange) {
